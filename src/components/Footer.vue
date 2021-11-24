@@ -41,7 +41,19 @@
         </div>
       </div>
     </div>
-    <div class="bottom-footer"></div>
+    <div class="bottom-footer">
+      <div class="container">
+        <a class="btn" href="">sign-up now!</a>
+        <div class="follow-box">
+          <span>FOLLOW US</span>
+          <i class="fab fa-facebook-f"></i>
+          <i class="fab fa-twitter"></i>
+          <i class="fab fa-youtube"></i>
+          <i class="fab fa-pinterest-p"></i>
+          <i class="fas fa-map-marker-alt"></i>
+        </div>
+      </div>
+    </div>
   </footer>
 </template>
 
@@ -80,6 +92,45 @@ footer{
           text-transform: uppercase;
           padding-bottom: 0.9rem;
         }
+      }
+    }
+  }
+  .bottom-footer{
+    display: flex;
+    align-items: center;
+    background-color: #303030;
+    height: 100px;
+    .container{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .btn{
+      color: white;
+      text-transform: uppercase;
+      text-decoration: none;
+      font-size: 0.9rem;
+      padding: 8px;
+      border: 2px solid #0282F9;
+      &:hover{
+        background-color: #0282F9;
+      }
+    }
+    span{
+      font-weight: bold;
+      color: #0282F9;
+      padding-right: 15px;
+     
+    }
+    i{
+      color: #303030;
+      background-color: #797979;
+      padding: 5px 8px;
+      border-radius: 50%;
+      margin-right: 10px;
+      &:hover{
+        background-color: white;
+        cursor: pointer;
       }
     }
   }

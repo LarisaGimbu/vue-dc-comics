@@ -27,8 +27,12 @@ export default {
 <style lang='scss'>
 header{
   display: flex;
+  align-items: center;
   justify-content: space-between;
   height: 100px;
+  img{
+    width: 80px;
+  }
   ul{
     list-style: none;
     li{
