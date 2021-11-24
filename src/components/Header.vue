@@ -39,7 +39,9 @@ header{
       font-weight: bold;
       line-height: 96px;
       color: #464646;
-      &.active{
+      &.active,
+      &:hover{
+        cursor: pointer;
         color: #0282F9;
         border-bottom: 4px solid #0282F9;
       }

@@ -1,6 +1,8 @@
 <template>
   <main>
-    <h1>MAIN</h1>
+    <div class="container">
+      <h2>--> Content goes here </h2>
+    </div>
   </main>
 </template>
 
@@ -13,5 +15,9 @@ export default {
 <style lang='scss'>
 main{
   background-color: #1C1C1C;
+  h2{
+    color: white;
+    line-height: 100px;
+  }
 }
 </style>
