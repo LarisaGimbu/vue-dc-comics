@@ -4,7 +4,7 @@
     <nav>
       <ul>
         <li>characters</li>
-        <li>comics</li>
+        <li class="active">comics</li>
         <li>movies</li>
         <li>tv</li>
         <li>games</li>
@@ -33,12 +33,16 @@ header{
     list-style: none;
     li{
       display: inline-block;
-      padding-right: 1rem;
+      padding: 0 0.5rem;
       text-transform: uppercase;
       font-size: 0.9rem;
       font-weight: bold;
-      line-height: 100px;
+      line-height: 96px;
       color: #464646;
+      &.active{
+        color: #0282F9;
+        border-bottom: 4px solid #0282F9;
+      }
     }
 
   }
