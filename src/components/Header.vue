@@ -24,6 +24,24 @@ export default {
 }
 </script>
 
-<style>
+<style lang='scss'>
+header{
+  display: flex;
+  justify-content: space-between;
+  height: 100px;
+  ul{
+    list-style: none;
+    li{
+      display: inline-block;
+      padding-right: 1rem;
+      text-transform: uppercase;
+      font-size: 0.9rem;
+      font-weight: bold;
+      line-height: 100px;
+      color: #464646;
+    }
 
+  }
+  
+}
 </style>

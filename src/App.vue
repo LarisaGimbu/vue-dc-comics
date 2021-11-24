@@ -24,6 +24,6 @@ export default {
 </script>
 
 <style lang="scss">
-@import './style/general.scss';
-@import './style/utilities.scss';
+@import './assets/style/general.scss';
+@import './assets/style/utilities.scss';
 </style>
