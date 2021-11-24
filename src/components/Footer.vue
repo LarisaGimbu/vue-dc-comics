@@ -112,6 +112,7 @@ footer{
       font-size: 0.9rem;
       padding: 8px;
       border: 2px solid #0282F9;
+      transition: all 0.5s;
       &:hover{
         background-color: #0282F9;
       }
