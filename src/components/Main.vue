@@ -4,60 +4,19 @@
       <div class="btn">current series</div>
     </div>
     <div class="container">
-      <div class="box">
+      <div 
+      v-for="(item, index) in series"
+      :key="index"
+      class="box">
         <div class="image-box">
-          <img src="https://www.dccomics.com/sites/default/files/styles/covers192x291/public/comic-covers/2018/09/AC1000_DLX_162-001_HD_5ba13723281ab0.37845353.jpg?itok=ZsI-C5eX" alt="">
+          <img :src="item.thumb">
         </div>
-        <p>action comics</p>
+        <p>{{item.series}}</p>
       </div>
-      <div class="box">
-        <div class="image-box">
-          <img src="https://www.dccomics.com/sites/default/files/styles/covers192x291/public/comic-covers/2018/09/AC1000_DLX_162-001_HD_5ba13723281ab0.37845353.jpg?itok=ZsI-C5eX" alt="">
-        </div>
-        <p>action comics</p>
-      </div>
-      <div class="box">
-        <div class="image-box">
-          <img src="https://www.dccomics.com/sites/default/files/styles/covers192x291/public/comic-covers/2018/09/AC1000_DLX_162-001_HD_5ba13723281ab0.37845353.jpg?itok=ZsI-C5eX" alt="">
-        </div>
-        <p>action comics</p>
-      </div>
-      <div class="box">
-        <div class="image-box">
-          <img src="https://www.dccomics.com/sites/default/files/styles/covers192x291/public/comic-covers/2018/09/AC1000_DLX_162-001_HD_5ba13723281ab0.37845353.jpg?itok=ZsI-C5eX" alt="">
-        </div>
-        <p>action comics</p>
-      </div>
-      <div class="box">
-        <div class="image-box">
-          <img src="https://www.dccomics.com/sites/default/files/styles/covers192x291/public/comic-covers/2018/09/AC1000_DLX_162-001_HD_5ba13723281ab0.37845353.jpg?itok=ZsI-C5eX" alt="">
-        </div>
-        <p>action comics</p>
-      </div>
-      <div class="box">
-        <div class="image-box">
-          <img src="https://www.dccomics.com/sites/default/files/styles/covers192x291/public/comic-covers/2018/09/AC1000_DLX_162-001_HD_5ba13723281ab0.37845353.jpg?itok=ZsI-C5eX" alt="">
-        </div>
-        <p>action comics</p>
-      </div>
-      <div class="box">
-        <div class="image-box">
-          <img src="https://www.dccomics.com/sites/default/files/styles/covers192x291/public/comic-covers/2018/09/AC1000_DLX_162-001_HD_5ba13723281ab0.37845353.jpg?itok=ZsI-C5eX" alt="">
-        </div>
-        <p>action comics</p>
-      </div>
-      <div class="box">
-        <div class="image-box">
-          <img src="https://www.dccomics.com/sites/default/files/styles/covers192x291/public/comic-covers/2018/09/AC1000_DLX_162-001_HD_5ba13723281ab0.37845353.jpg?itok=ZsI-C5eX" alt="">
-        </div>
-        <p>action comics</p>
-      </div>
-      <div class="box">
-        <div class="image-box">
-          <img src="https://www.dccomics.com/sites/default/files/styles/covers192x291/public/comic-covers/2018/09/AC1000_DLX_162-001_HD_5ba13723281ab0.37845353.jpg?itok=ZsI-C5eX" alt="">
-        </div>
-        <p>action comics</p>
-      </div>
+      <div class="btn">load more</div>
+     
+     
+      
     </div>
   </main>
 </template>
@@ -158,8 +117,9 @@ main{
       position: absolute;
       left: 100px;
       top: 94%;
-      width: 140px;
+      width: 160px;
       font-weight: bold;
+      font-size: 1.1rem;
     }
   }
   .container{
@@ -167,12 +127,12 @@ main{
     justify-content: center;
     flex-wrap: wrap;
     .box{
-      padding-top: 50px;
+      padding-top: 40px;
       margin-right: 20px;
       width: 140px;
       .image-box{
         width: 100%;
-        height: 180px;
+        height: 140px;
         overflow: hidden;
         img{
           width: 100%;
@@ -182,7 +142,14 @@ main{
         color: white;
         text-transform: uppercase;
         padding-top: 10px;
+        font-size: 0.7rem;
       }
+    }
+    .btn{
+      margin: 30px 0 20px 0;
+      width: 150px;
+      text-align: center;
+      font-size: 0.9rem;
     }
   }
 }
