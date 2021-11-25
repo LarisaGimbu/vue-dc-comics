@@ -1,31 +1,44 @@
 <template>
   <section>
-    <div class="box">
-      <img src="../assets/img/buy-comics-digital-comics.png" alt="">
-      <p class="description">digital comics</p>
-    </div>
-    <div class="box">
-      <img src="../assets/img/buy-comics-merchandise.png" alt="">
-      <p class="description">dc merchandise</p>
-    </div>
-    <div class="box">
-      <img src="../assets/img/buy-comics-subscriptions.png" alt="">
-      <p class="description">subscription</p>
-    </div>
-    <div class="box">
-      <img src="../assets/img/buy-comics-shop-locator.png" alt="">
-      <p class="description">comic shop locator</p>
-    </div>
-    <div class="box">
-      <img src="../assets/img/buy-dc-power-visa.svg" alt="">
-      <p class="description">dc power visa</p>
+    <div 
+    v-for="(item, index) in infobar"
+    :key="index"
+    class="box">
+      <img :src="item.image" alt="">
+      <p class="description">{{item.text}}</p>
     </div>
   </section>
 </template>
 
 <script>
 export default {
-  name:'Infobar'
+  name:'Infobar',
+  data(){
+    return{
+      infobar:[
+        {
+          image: require("../assets/img/buy-comics-digital-comics.png"),
+          text:'digital comics'
+        },
+        {
+          image: require("../assets/img/buy-comics-merchandise.png"),
+          text:'dc merchandise'
+        },
+        {
+          image: require("../assets/img/buy-comics-subscriptions.png"),
+          text:'subscription'
+        },
+        {
+          image: require("../assets/img/buy-comics-shop-locator.png"),
+          text:'comic shop locator'
+        },
+        {
+          image: require("../assets/img/buy-dc-power-visa.svg"),
+          text:'dc power visa'
+        },
+      ]
+    }
+  }
 }
 </script>
 
