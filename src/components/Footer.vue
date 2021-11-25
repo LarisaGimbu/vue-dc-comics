@@ -113,6 +113,12 @@ footer{
       justify-content: space-between;
       align-items: center;
     }
+    .btn{
+      background-color: #303030;
+      &:hover{
+        background-color: $primary-color;
+      }
+    }
     span{
       font-weight: bold;
       color: $primary-color;
