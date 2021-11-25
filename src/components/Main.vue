@@ -4,15 +4,11 @@
       <div class="btn">current series</div>
     </div>
     <div class="container">
-      <div 
-      v-for="(item, index) in series"
+      <Cards 
+      v-for="(serie, index) in series" 
       :key="index"
-      class="box">
-        <div class="image-box">
-          <img :src="item.thumb">
-        </div>
-        <p>{{item.series}}</p>
-      </div>
+      :image="serie.thumb"
+      :text="serie.series"/>
       <div class="btn">load more</div>
      
      
@@ -22,8 +18,13 @@
 </template>
 
 <script>
+import Cards from './Cards.vue'
+
 export default {
   name: 'Main',
+  components:{
+    Cards
+  },
   data(){
     return{
       series: [
@@ -126,29 +127,7 @@ main{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    .box{
-      margin-top: 40px;
-      margin-right: 20px;
-      width: 140px;
-      &:hover{
-        cursor: pointer;
-        box-shadow: 1px 1px 5px white;
-      }
-      .image-box{
-        width: 100%;
-        height: 140px;
-        overflow: hidden;
-        img{
-          width: 100%;
-        }
-      }
-      p{
-        color: white;
-        text-transform: uppercase;
-        padding-top: 10px;
-        font-size: 0.7rem;
-      }
-    }
+    
     .btn{
       margin: 30px 0 20px 0;
       width: 150px;
