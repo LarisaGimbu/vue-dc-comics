@@ -85,10 +85,14 @@ footer{
         padding: 20px 20px 0 0;
         li{
           color: #959595;
-          font-size: 0.8rem;
+          font-size: 0.7rem;
           padding-bottom: 0.5rem;
+          &:hover{
+            color: white;
+            cursor: pointer;
+          }
           h3{
-            font-size: 1.3rem;
+            font-size: 1rem;
             color: white;
             text-transform: uppercase;
             padding-bottom: 0.9rem;
