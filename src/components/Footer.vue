@@ -80,21 +80,27 @@ footer{
       flex-wrap: wrap;
       width: 45%;
       padding-top: 30px;
-    }
-    ul{
-      list-style: none;
-      padding: 20px 20px 0 0;
-      li{
-        color: #959595;
-        font-size: 0.8rem;
-        padding-bottom: 0.5rem;
-        h3{
-          font-size: 1.3rem;
-          color: white;
-          text-transform: uppercase;
-          padding-bottom: 0.9rem;
+      ul{
+        list-style: none;
+        padding: 20px 20px 0 0;
+        li{
+          color: #959595;
+          font-size: 0.8rem;
+          padding-bottom: 0.5rem;
+          h3{
+            font-size: 1.3rem;
+            color: white;
+            text-transform: uppercase;
+            padding-bottom: 0.9rem;
+          }
         }
       }
+    
+    }
+    img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
     }
   }
   .bottom-footer{
