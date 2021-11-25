@@ -57,9 +57,10 @@ section{
     padding: 0 1.5rem;
     color: white;
     img{
-      width: 40px;
+      width: 30px;
     }
     .description{
+      font-size: 0.8rem;
       text-transform: uppercase;
       padding-left: 10px;
     }
