@@ -3,16 +3,10 @@
     <img src="../assets/img/dc-logo.png" alt="logo">
     <nav>
       <ul>
-        <li>characters</li>
-        <li class="active">comics</li>
-        <li>movies</li>
-        <li>tv</li>
-        <li>games</li>
-        <li>collectbles</li>
-        <li>videos</li>
-        <li>fans</li>
-        <li>news</li>
-        <li>shop</li>
+        <li 
+        v-for="(item, index) in navbar" 
+        :key="index"
+        :class="{active: item.active}">{{item.name}}</li>
       </ul>
     </nav>
   </header>
@@ -20,11 +14,59 @@
 
 <script>
 export default {
-  name:'Header'
+  name:'Header',
+  data(){
+    return{
+      navbar:[
+        {
+          name: 'characters',
+          active: false
+        },
+        {
+          name: 'comics',
+          active: true
+        },
+        {
+          name: 'movies',
+          active: false
+        },
+        {
+          name: 'tv',
+          active: false
+        },
+        {
+          name: 'games',
+          active: false
+        },
+        {
+          name: 'collecatbles',
+          active: false
+        },
+        {
+          name: 'videos',
+          active: false
+        },
+        {
+          name: 'fans',
+          active: false
+        },
+        {
+          name: 'news',
+          active: false
+        },
+        {
+          name: 'shop',
+          active: false
+        },
+      ]
+    }
+  }
 }
 </script>
 
 <style lang='scss'>
+@import '../assets/style/vars.scss';
+
 header{
   display: flex;
   align-items: center;
@@ -46,8 +88,8 @@ header{
       &.active,
       &:hover{
         cursor: pointer;
-        color: #0282F9;
-        border-bottom: 4px solid #0282F9;
+        color: $primary-color;
+        border-bottom: 4px solid $primary-color;
       }
     }
 

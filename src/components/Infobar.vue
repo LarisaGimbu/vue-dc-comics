@@ -30,11 +30,13 @@ export default {
 </script>
 
 <style lang='scss'>
+@import '../assets/style/vars.scss';
+
 section{
   display: flex;
   justify-content: center;
   padding: 30px 0;
-  background-color: #0282F9;
+  background-color: $primary-color;
   
   .box{
     display: flex;

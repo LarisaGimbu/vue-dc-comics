@@ -64,6 +64,8 @@ export default {
 </script>
 
 <style lang="scss">
+@import '../assets/style/vars.scss';
+
 footer{
   .top-footer{
     display: flex;
@@ -105,21 +107,9 @@ footer{
       justify-content: space-between;
       align-items: center;
     }
-    .btn{
-      color: white;
-      text-transform: uppercase;
-      text-decoration: none;
-      font-size: 0.9rem;
-      padding: 8px;
-      border: 2px solid #0282F9;
-      transition: all 0.5s;
-      &:hover{
-        background-color: #0282F9;
-      }
-    }
     span{
       font-weight: bold;
-      color: #0282F9;
+      color: $primary-color;
       padding-right: 15px;
      
     }
